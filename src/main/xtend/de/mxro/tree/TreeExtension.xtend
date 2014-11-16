@@ -5,7 +5,6 @@ import java.util.List
 
 class TreeExtension {
 	
-	
 	def <T, R> void forEach(Tree<T> tree, Closure<Tree<T>> operation) {
 
 		for (node: tree) {
