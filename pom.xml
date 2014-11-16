@@ -23,8 +23,6 @@
 	<!-- Dependent Modules -->
 	<dependencies>
 
-		
-		
 		<dependency>
 			<groupId>com.github.oehme.xtend</groupId>
 			<artifactId>xtend-junit</artifactId>

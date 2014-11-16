@@ -26,5 +26,6 @@ class Tree<T> implements Iterable<Tree<T>> {
 	override iterator() {
 		children.iterator
 	}
+	
 
 }
