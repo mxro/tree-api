@@ -8,10 +8,10 @@ import org.eclipse.xtext.xbase.lib.CollectionLiterals;
 
 @SuppressWarnings("all")
 public class TreeExtension {
-  public <T extends Object, R extends Object> void forEach(final Tree<T> tree, final Closure<Tree<T>> operation) {
+  public <T extends Object, R extends Object> void forEachNode(final Tree<T> tree, final Closure<Tree<T>> operation) {
     for (final Tree<T> node : tree) {
       {
-        this.<T, R>forEach(node, operation);
+        this.<T, R>forEachNode(node, operation);
         operation.apply(tree);
       }
     }

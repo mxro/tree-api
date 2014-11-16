@@ -5,11 +5,11 @@ import java.util.List
 
 class TreeExtension {
 
-	def <T, R> void forEach(Tree<T> tree, Closure<Tree<T>> operation) {
+	def <T, R> void forEachNode(Tree<T> tree, Closure<Tree<T>> operation) {
 
 		for (node : tree) {
 
-			forEach(node, operation)
+			forEachNode(node, operation)
 
 			operation.apply(tree)
 
