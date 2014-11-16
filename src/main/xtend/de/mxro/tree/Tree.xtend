@@ -24,6 +24,10 @@ class Tree<T> implements Iterable<Tree<T>> {
 		parent
 	}
 
+	def hasParent() {
+		parent != null
+	}
+
 	def value() {
 		value
 	}

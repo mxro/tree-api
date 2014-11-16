@@ -1,5 +1,6 @@
 package de.mxro.tree;
 
+import com.google.common.base.Objects;
 import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
@@ -26,6 +27,10 @@ public class Tree<T extends Object> implements Iterable<Tree<T>> {
   
   public Tree<T> parent() {
     return this.parent;
+  }
+  
+  public boolean hasParent() {
+    return (!Objects.equal(this.parent, null));
   }
   
   public T value() {
