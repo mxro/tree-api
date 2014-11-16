@@ -23,6 +23,11 @@
 	<!-- Dependent Modules -->
 	<dependencies>
 
+<dependency>
+		<groupId>de.mxro.async</groupId>
+	<artifactId>async-api</artifactId>
+	<version>[0.0.1,)</version>
+</dependency>
 		<dependency>
 			<groupId>com.github.oehme.xtend</groupId>
 			<artifactId>xtend-junit</artifactId>
