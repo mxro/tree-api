@@ -5,12 +5,12 @@ import java.util.List
 
 class Tree<T> implements Iterable<Tree<T>> {
 
-	T root;
+	T value;
 	List<Tree<T>> children;
 	Tree<T> parent;
 
 	new(T data) {
-		this.root = data;
+		this.value = data;
 		this.children = new LinkedList<Tree<T>>();
 	}
 
@@ -24,8 +24,8 @@ class Tree<T> implements Iterable<Tree<T>> {
 		parent
 	}
 
-	def root() {
-		root
+	def value() {
+		value
 	}
 
 	def children() {

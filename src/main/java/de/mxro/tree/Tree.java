@@ -6,14 +6,14 @@ import java.util.List;
 
 @SuppressWarnings("all")
 public class Tree<T extends Object> implements Iterable<Tree<T>> {
-  private T root;
+  private T value;
   
   private List<Tree<T>> children;
   
   private Tree<T> parent;
   
   public Tree(final T data) {
-    this.root = data;
+    this.value = data;
     LinkedList<Tree<T>> _linkedList = new LinkedList<Tree<T>>();
     this.children = _linkedList;
   }
@@ -28,8 +28,8 @@ public class Tree<T extends Object> implements Iterable<Tree<T>> {
     return this.parent;
   }
   
-  public T root() {
-    return this.root;
+  public T value() {
+    return this.value;
   }
   
   public List<Tree<T>> children() {
