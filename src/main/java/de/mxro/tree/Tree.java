@@ -44,4 +44,10 @@ public class Tree<T extends Object> implements Iterable<Tree<T>> {
   public Iterator<Tree<T>> iterator() {
     return this.children.iterator();
   }
+  
+  public String toString() {
+    int _size = this.children.size();
+    String _plus = ((("(" + this.value) + ", ") + Integer.valueOf(_size));
+    return (_plus + ")");
+  }
 }

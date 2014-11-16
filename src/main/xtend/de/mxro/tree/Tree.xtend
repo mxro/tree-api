@@ -40,5 +40,9 @@ class Tree<T> implements Iterable<Tree<T>> {
 		children.iterator
 	}
 	
+	override toString() {
+		return "("+value+", "+children.size()+")"
+	}
+	
 
 }
