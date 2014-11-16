@@ -32,6 +32,10 @@ public class Tree<T extends Object> implements Iterable<Tree<T>> {
     return this.root;
   }
   
+  public List<Tree<T>> children() {
+    return this.children;
+  }
+  
   public Iterator<Tree<T>> iterator() {
     return this.children.iterator();
   }

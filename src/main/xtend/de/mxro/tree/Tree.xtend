@@ -28,6 +28,10 @@ class Tree<T> implements Iterable<Tree<T>> {
 		root
 	}
 
+	def children() {
+		children
+	}
+
 	override iterator() {
 		children.iterator
 	}

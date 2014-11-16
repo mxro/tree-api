@@ -6,11 +6,11 @@ import de.mxro.fn.Closure2
 class TreeExtension {
 	
 	
-	def <T> void traverse(Tree<T> tree, Closure2<T, T> operation) {
+	def <T> void forEach(Tree<T> tree, Closure2<T, T> operation) {
 
 		for (node: tree) {
 			
-			traverse(node, operation)
+			forEach(node, operation)
 			
 			operation.apply(tree.root, node.root)
 			
