@@ -1,18 +1,18 @@
 package de.mxro.tree
 
+import de.mxro.fn.Closure
 import java.util.List
-import de.mxro.fn.Closure2
 
 class TreeExtension {
 	
 	
-	def <T> void forEach(Tree<T> tree, Closure2<T, T> operation) {
+	def <T, R> void forEach(Tree<T> tree, Closure<Tree<T>> operation) {
 
 		for (node: tree) {
 			
 			forEach(node, operation)
 			
-			operation.apply(tree.root, node.root)
+			operation.apply(tree)
 			
 		}
 		

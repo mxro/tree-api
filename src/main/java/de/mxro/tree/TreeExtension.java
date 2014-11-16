@@ -1,6 +1,6 @@
 package de.mxro.tree;
 
-import de.mxro.fn.Closure2;
+import de.mxro.fn.Closure;
 import de.mxro.tree.Tree;
 import java.util.ArrayList;
 import java.util.List;
@@ -8,13 +8,11 @@ import org.eclipse.xtext.xbase.lib.CollectionLiterals;
 
 @SuppressWarnings("all")
 public class TreeExtension {
-  public <T extends Object> void forEach(final Tree<T> tree, final Closure2<T, T> operation) {
+  public <T extends Object, R extends Object> void forEach(final Tree<T> tree, final Closure<Tree<T>> operation) {
     for (final Tree<T> node : tree) {
       {
-        this.<T>forEach(node, operation);
-        T _root = tree.root();
-        T _root_1 = node.root();
-        operation.apply(_root, _root_1);
+        this.<T, R>forEach(node, operation);
+        operation.apply(tree);
       }
     }
   }
