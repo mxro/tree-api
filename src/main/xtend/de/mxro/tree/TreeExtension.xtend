@@ -6,7 +6,7 @@ import de.mxro.fn.Closure2
 class TreeExtension {
 	
 	
-	def  static <T> void traverse(Tree<T> tree, Closure2<T, T> operation) {
+	def <T> void traverse(Tree<T> tree, Closure2<T, T> operation) {
 
 		for (node: tree) {
 			

@@ -10,6 +10,8 @@ public class Tree<T extends Object> implements Iterable<Tree<T>> {
   
   private List<Tree<T>> children;
   
+  private Tree<T> parent;
+  
   public Tree(final T data) {
     this.root = data;
     LinkedList<Tree<T>> _linkedList = new LinkedList<Tree<T>>();
@@ -17,8 +19,13 @@ public class Tree<T extends Object> implements Iterable<Tree<T>> {
   }
   
   public Tree<T> add(final Tree<T> childNode) {
+    childNode.parent = this;
     this.children.add(childNode);
     return childNode;
+  }
+  
+  public Tree<T> parent() {
+    return this.parent;
   }
   
   public T root() {
