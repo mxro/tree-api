@@ -308,7 +308,14 @@
 
 	</build>
 
-
+	
+	<repositories>
+		<repository>
+			<id>Appjangle Releases</id>
+			<url>http://maven.appjangle.com/appjangle/releases</url>
+		</repository>
+	</repositories>
+	
 	<developers>
 		<developer>
 			<id>mxro</id>
