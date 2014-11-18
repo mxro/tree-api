@@ -4,7 +4,7 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<groupId>de.mxro.tree</groupId>
 	<artifactId>tree-api</artifactId>
-	<version>0.0.2</version>
+	<version>0.0.3-SNAPSHOT</version>
 	<description>A simple Tree implementation for java and utilities for working with trees.</description>
 	<url>https://github.com/mxro/tree-api</url>
 	<properties>
