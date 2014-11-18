@@ -7,7 +7,6 @@
 	<version>0.0.2</version>
 	<description>A simple Tree implementation for java and utilities for working with trees.</description>
 	<url>https://github.com/mxro/tree-api</url>
-
 	<properties>
 		<module.gwtVersion>2.5.1</module.gwtVersion>
 		<module.importedPackages>
