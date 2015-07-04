@@ -41,10 +41,12 @@ public class Tree<T extends Object> implements Iterable<Tree<T>> {
     return this.children;
   }
   
+  @Override
   public Iterator<Tree<T>> iterator() {
     return this.children.iterator();
   }
   
+  @Override
   public String toString() {
     int _size = this.children.size();
     String _plus = ((("(" + this.value) + ", ") + Integer.valueOf(_size));
