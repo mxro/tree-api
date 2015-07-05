@@ -1,10 +1,9 @@
 package de.mxro.tree;
 
+import com.google.common.base.Objects;
 import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
-
-import com.google.common.base.Objects;
 
 @SuppressWarnings("all")
 public class Tree<T extends Object> implements Iterable<Tree<T>> {
