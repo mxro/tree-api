@@ -1,6 +1,6 @@
 package de.mxro.tree
 
-import de.mxro.fn.Closure
+import delight.functional.Closure
 import java.util.List
 
 class TreeExtension {

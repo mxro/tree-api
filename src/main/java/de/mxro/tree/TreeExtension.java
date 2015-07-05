@@ -1,15 +1,20 @@
 package de.mxro.tree;
 
+import de.mxro.tree.Tree;
+import delight.functional.Closure;
 import java.util.ArrayList;
 import java.util.List;
-
 import org.eclipse.xtext.xbase.lib.CollectionLiterals;
 
 @SuppressWarnings("all")
 public class TreeExtension {
-  public <T extends Object, R extends Object> void forEachNode(final Tree<T> tree, final /* Closure<Tree<T>> */Object operation) {
-    throw new Error("Unresolved compilation problems:"
-      + "\napply cannot be resolved");
+  public <T extends Object, R extends Object> void forEachNode(final Tree<T> tree, final Closure<Tree<T>> operation) {
+    for (final Tree<T> node : tree) {
+      {
+        this.<T, R>forEachNode(node, operation);
+        operation.apply(tree);
+      }
+    }
   }
   
   public <T extends Object> List<Tree<T>> toList(final Tree<T> t) {
