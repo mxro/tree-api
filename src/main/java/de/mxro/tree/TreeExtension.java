@@ -1,8 +1,8 @@
 package de.mxro.tree;
 
-import de.mxro.tree.Tree;
 import java.util.ArrayList;
 import java.util.List;
+
 import org.eclipse.xtext.xbase.lib.CollectionLiterals;
 
 @SuppressWarnings("all")
