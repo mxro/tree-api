@@ -103,7 +103,7 @@ class Tree<T> implements Iterable<Tree<T>> {
 	def static private <T> String render(String offset, Tree<T> t) {
 		var String res = t.value().toString+"\n"
 		
-		if (t.size == 0) {
+		if (t.children.size == 0) {
 			return res
 		}
 		

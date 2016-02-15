@@ -7,7 +7,6 @@ import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
 import org.eclipse.xtext.xbase.lib.CollectionLiterals;
-import org.eclipse.xtext.xbase.lib.IterableExtensions;
 
 @SuppressWarnings("all")
 public class Tree<T extends Object> implements Iterable<Tree<T>> {
@@ -120,7 +119,7 @@ public class Tree<T extends Object> implements Iterable<Tree<T>> {
       T _value = t.value();
       String _string = _value.toString();
       String res = (_string + "\n");
-      int _size = IterableExtensions.size(t);
+      int _size = t.children.size();
       boolean _equals = (_size == 0);
       if (_equals) {
         return res;
