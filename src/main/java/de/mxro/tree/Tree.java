@@ -116,7 +116,8 @@ public class Tree<T extends Object> implements Iterable<Tree<T>> {
   private static <T extends Object> String render(final String offset, final Tree<T> t) {
     String _xblockexpression = null;
     {
-      String _string = t.value().toString();
+      T _value = t.value();
+      String _string = _value.toString();
       String res = (_string + "\n");
       int _size = t.children.size();
       boolean _equals = (_size == 0);
